@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods", "Methods\Methods.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OriginalMath", "OriginalMath\OriginalMath.csproj", "{1A992FD5-29C5-4A3C-8037-DCE1EF048ED1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP1", "OOP1\OOP1.csproj", "{A58A63AE-C8E7-4103-A643-759DE2D4D5F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1A992FD5-29C5-4A3C-8037-DCE1EF048ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A992FD5-29C5-4A3C-8037-DCE1EF048ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A992FD5-29C5-4A3C-8037-DCE1EF048ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A58A63AE-C8E7-4103-A643-759DE2D4D5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58A63AE-C8E7-4103-A643-759DE2D4D5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58A63AE-C8E7-4103-A643-759DE2D4D5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58A63AE-C8E7-4103-A643-759DE2D4D5F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
