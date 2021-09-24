@@ -10,5 +10,13 @@ namespace OOP3
         {
             krediManager.Hesapla();
         }
+
+        public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler)
+        {
+            foreach (var kredi in krediler)
+            {
+                kredi.Hesapla();
+            }
+        }
     }
 }
