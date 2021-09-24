@@ -36,6 +36,10 @@ namespace OOP3
             
 
             basvuruManager.BasvuruYap(ihtiyacKrediManager, listLogger);
+
+
+            List<ILoggerService> emptyLogger = new List<ILoggerService>();
+            basvuruManager.BasvuruYap(tasitKrediManager, emptyLogger);
         }
     }
 }
