@@ -6,10 +6,35 @@ namespace OOP3
 {
     class BasvuruManager
     {
-        public void BasvuruYap(IKrediManager krediManager)
+        //birer tane manager ve log istenirse
+        /*
+        public void BasvuruYap(IKrediManager krediManager, ILoggerService logger)
         {
             krediManager.Hesapla();
+            logger.Log();
+
         }
+        
+        ---------------------------------------------------
+        */
+
+
+
+        //birden fazla log istenirse
+
+        public void BasvuruYap(IKrediManager krediManager, List<ILoggerService> loggers)
+        {
+            krediManager.Hesapla();
+
+            //tek satır kodda bir kaç tane farklı log u göremeyeceğimden FOREACH en mantıklı çözümdür
+
+            foreach (var log in loggers)
+            {
+                log.Log();
+            }
+
+        }
+
 
         public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler)
         {
@@ -18,5 +43,6 @@ namespace OOP3
                 kredi.Hesapla();
             }
         }
+ 
     }
 }

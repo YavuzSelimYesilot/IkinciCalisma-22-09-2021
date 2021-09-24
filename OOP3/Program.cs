@@ -19,8 +19,23 @@ namespace OOP3
 
             List<IKrediManager> krediler = new List<IKrediManager>() {ihtiyacKrediManager, tasitKrediManager };
 
-            basvuruManager.KrediOnBilgilendirmesiYap(krediler);
+            //basvuruManager.KrediOnBilgilendirmesiYap(krediler);
 
+            ILoggerService fileLoggerService = new FileLoggerService();
+            ILoggerService msmLoggerService = new MsmLoggerService();
+
+            //tek log tanımı olursa sorunsuz çalışacak kod
+            //basvuruManager.BasvuruYap(tasitKrediManager, logger1);
+
+            //birden fazla veya hiç log işlemi olmasa dahi çalışacak kod
+
+            List<ILoggerService> listLogger = new List<ILoggerService>();
+
+            listLogger.Add(fileLoggerService);
+            listLogger.Add(msmLoggerService);
+            
+
+            basvuruManager.BasvuruYap(ihtiyacKrediManager, listLogger);
         }
     }
 }
